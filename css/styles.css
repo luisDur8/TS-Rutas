@@ -1,9 +1,9 @@
 :root {
     --blanco: #ffffff;
-    --primario: #182C61;
-    --secundario: #3B3B98;
-    --gris: #CAD3C8;
-    --oscuro: #2C3A47;
+    --primario: #8A4FF7;
+    --secundario: #8A4FF7;
+    --gris: #BD56E6;
+    --oscuro: #FF51D2;
 }
 html {
     box-sizing: border-box;
@@ -18,7 +18,7 @@ p {
 }
 body {
     font-family: 'Krub', sans-serif;
-    background-image: linear-gradient(to top, white 0%, #182C61 100%);
+    background-image: linear-gradient(to top, white 0%, #9069F2 100%);
     min-height: 100%;
 }
 h1 {
