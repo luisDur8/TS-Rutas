@@ -5,25 +5,22 @@
     --gris: #BD56E6;
     --oscuro: #FF51D2;
 }
+/*  Globales **/
 html {
-    box-sizing: border-box;
-    min-height: 100%;
+  font-size: 62.5%;
+  box-sizing: border-box; /* Hack para Box Model */
+  min-height: 100%;
 }
+
 *, *:before, *:after {
     box-sizing: inherit;
 }
 
-p,
-ul {
-  font-size: 1.5rem;
-  line-height: 2;
-  color: #ffffff;
-}
-
 body {
-    font-family: 'Krub', sans-serif;
-    background-image: linear-gradient(to top, white 0%, #9069F2 100%);
-    min-height: 100%;
+  font-size: 16px; /* 1rem = 10px */
+  font-family: 'Krub', sans-serif;
+  background-image: linear-gradient(to top, white 0%, #9069F2 100%);
+  min-height: 100%;
 }
 h1 {
     font-size: 1.4rem;
@@ -42,6 +39,14 @@ h3 {
     font-weight: 400;
     font-size: 1.6rem;
 }
+
+p,
+ul {
+  font-size: 1.5rem;
+  line-height: 2;
+  color: #ffffff;
+}
+
 .contenedor {
     margin: 0 auto;
     max-width: 1200px;
@@ -164,16 +169,18 @@ h3 {
     font-size: 3rem;
 }
 
+.formulario fieldset {
+  border: none;
+}
+
 .formulario {
     background-color: var(--gris);
     padding: 2rem;
-    border-radius: 10px;
-    scroll-snap-align: center;
-    scroll-snap-stop: always;
+    border-radius: 1rem;
 }
 .formulario legend {
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     color: var(--primario);
     margin-bottom: 2rem;
     display: block;
