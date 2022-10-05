@@ -28,12 +28,13 @@ h1 {
   font-size: 1.4rem;
 }
 h2 span {
-  font-size: 1.4rem;
+  font-size: 3rem;
 }
 h1, h2, h3 {
   text-align: center;
 }
 h2 {
+  color: var(--secundario);
   font-size: 2.4rem;
 }
 h3 {
@@ -42,9 +43,10 @@ h3 {
   font-size: 1.6rem;
 }
 
+
 p,
 ul {
-  font-size: 1.5rem;
+  font-size: 2rem;
   line-height: 2;
   color: var(--claro);
 }
@@ -69,8 +71,6 @@ ul {
 }
 
 .navegacion {
-  scroll-snap-align: center;
-  scroll-snap-stop: always;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -86,7 +86,7 @@ ul {
   padding: 1rem 2rem;
   color: var(--claro);
   text-decoration: none;
-  font-size: 1.4rem;
+  font-size: 2rem;
   font-weight: 700;
 }
 
@@ -123,9 +123,16 @@ ul {
   justify-content: center;
 }
 
-.contenido-hero h2, 
+.contenido-hero h2 {
+  color: var(--claro);
+  font-weight: bold;
+  font-size: 5rem;
+}
+
 .contenido-hero p{
   color: var(--claro);
+  font-weight: bold;
+  font-size: 1.8rem;
 }
 
 .boton {
@@ -147,6 +154,7 @@ ul {
 
 .rutas {
     max-width: 100%;
+    margin: auto;
 }
 @media (min-width:768px) {
   .rutas {
@@ -181,6 +189,7 @@ ul {
   font-size: 3rem;
 }
 
+/*
 .formulario fieldset {
   border: none;
 }
@@ -190,7 +199,7 @@ ul {
   margin: 0 auto;
   padding: 2rem;
   border-radius: 1rem;
-  width: min(60rem, 100%); /** Utilizar el valor más pequeño **/
+  width: min(60rem, 100%); /* Utilizar el valor más pequeño 
 }
 
 .formulario legend {
@@ -207,7 +216,7 @@ ul {
     margin: 0 auto;
   }
 }
-
+*/
 .contenedor-campos {
   display: flex;
   justify-content: space-between;
@@ -285,22 +294,17 @@ textarea {
 
 .footer p {
   color: var(--oscuro);
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
-.contenido-hero p {
-  font-weight: bold;
-  font-size: 1.1rem;
-}
 
 .contenedor h2{
-  color: var(--claro);
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 .contenedor h3{
   color: var(--claro);
-  font-size: 1.7rem;
+  font-size: 2.5rem;
   font-weight: 700;
 }
 
@@ -309,9 +313,6 @@ ul span {
 }
 
 li {
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   text-align: start;
 }
-
-
-
