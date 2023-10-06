@@ -1,10 +1,8 @@
 :root {
   --claro: #ffffff;
-  --oscuro: #000000;
-  --principal: #3b4398;
-  --secundario: #BD56E6;
-  --terciario: #8A4FF7;
-  --detalles: #FF51D2;
+  --oscuro: #000000; /* Sin uso */
+  --principal: #1bbc0f;
+  --detalles: #3af621;
 }
 /*  Globales **/
 html {
@@ -20,7 +18,7 @@ html {
 body {
   font-size: 16px; /* 1rem = 10px */
   font-family: 'Krub', sans-serif;
-  background-image: linear-gradient(to top, var(--claro) 0%, var(--secundario) 100%);
+  background-image: linear-gradient(to top, var(--claro) 0%, var(--detalles) 100%);
   min-height: 100%;
 }
 
@@ -34,7 +32,7 @@ h1, h2, h3 {
   text-align: center;
 }
 h2 {
-  color: var(--secundario);
+  color: var(--detalles);
   font-size: 2.4rem;
 }
 h3 {
@@ -53,7 +51,7 @@ ul {
 
 .contenedor {
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1400px;
 }
 
 .sombra {
@@ -67,7 +65,7 @@ ul {
 }
 
 .nav-bg {
-  background-color: var(--secundario);
+  background-color: var(--principal);
 }
 
 .navegacion {
@@ -78,21 +76,21 @@ ul {
 @media (min-width:768px) {
   .navegacion {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
   }
 }
 
 .navegacion a{
-  padding: 1rem 2rem;
+  padding: 0.8rem 5rem;
   color: var(--claro);
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 700;
 }
 
 .navegacion a:hover {
   background-color: var(--claro);
-  color: var(--secundario);
+  color: var(--principal);
 }
 
 .navegacion a:last-of-type {
@@ -136,20 +134,21 @@ ul {
 }
 
 .boton {
-  background-color: var(--secundario);
+  background-color: var(--principal);
   color: var(--claro);
   margin-top: .5rem;
-  padding: .5rem 3rem;
+  padding: 1rem 3rem;
   border-radius: 5px;
   font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   border:none;
 }
 
 .boton:hover{
     cursor: pointer;
+    opacity: 0.8;
 }
 
 .rutas {
@@ -180,7 +179,7 @@ ul {
   width: 150px;
   justify-content: space-evenly;
   align-items: center;
-  background-color: var(--terciario);
+  background-color: var(--detalles);
   border-radius: 50%;
 }
 
@@ -189,34 +188,6 @@ ul {
   font-size: 3rem;
 }
 
-/*
-.formulario fieldset {
-  border: none;
-}
-
-.formulario {
-  background-color: var(--terciario);
-  margin: 0 auto;
-  padding: 2rem;
-  border-radius: 1rem;
-  width: min(60rem, 100%); /* Utilizar el valor más pequeño 
-}
-
-.formulario legend {
-  text-align: center;
-  font-size: 1.8rem;
-  color: var(--principal);
-  margin-bottom: 2rem;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-@media (min-width:768px) {
-  .formulario {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-}
-*/
 .contenedor-campos {
   display: flex;
   justify-content: space-between;
